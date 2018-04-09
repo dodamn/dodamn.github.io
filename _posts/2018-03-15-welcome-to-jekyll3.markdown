@@ -11,7 +11,7 @@ www.github.com
 
 <http://www.github.com>
 
-<www.github.com>
+<http://www.github.com>
 
 http://www.github.com
 
