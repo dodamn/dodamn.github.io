@@ -9,7 +9,9 @@ published: true
 
 www.github.com
 
-auto link <http://www.github.com>, <www.github.com>
+<http://www.github.com>
+
+<www.github.com>
 
 http://www.github.com
 
