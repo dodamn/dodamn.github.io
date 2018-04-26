@@ -6,7 +6,3 @@ prose:
           element: "checkbox"
           label: "published"
           value: "true"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
