@@ -19,11 +19,14 @@ published: true
   <br>
   
   <br>
+  <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">View source</a>
+  <br>
+  <a href="http://prose.io/#{{site.repo}}/edit/{{site.branch}}/{{ page.path }}">Edit this post</a>
+  <br>
   {{ page.date | date: "%Y-%m-%d" }}    
   <h1 class="entry-title">
     {{ post.title }}
   </h1>
-  <h1>{{ page.path }}</h1>
 {% endif %}
 <div class="entry-content">{{ content }}</div>
 </div>
