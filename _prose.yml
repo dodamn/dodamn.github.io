@@ -1,0 +1,7 @@
+prose:
+  _posts:
+    - name: "published"
+      field:
+        element: "checkbox"
+        label: "published"
+        value: "true"
