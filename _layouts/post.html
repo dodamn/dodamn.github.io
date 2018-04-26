@@ -3,7 +3,7 @@ layout: default
 published: true
 ---
 <div class="blog-index">  
-  {% assign post = site.posts.first %}
+  {% assign post = page %}
   {% assign content = post.content %}
 {% if post.title %}
   <a href="{{ root_url }}">Home</a>
