@@ -7,9 +7,12 @@ published: true
   {% assign post = site.posts.first %}
   {% assign content = post.content %}
 {% if post.title %}
-  <a href="{{ root_url }}">Home</a>  
+  <a href="{{ root_url }}">Home</a>
+  <br>
   <a href="{{ post.previous.url }}">Newer post</a>
+<br>
   <a href="{{ post.next.url }}">Older post</a>
+  <br>
   <a href=
   <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
