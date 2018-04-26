@@ -2,11 +2,22 @@
 layout: default
 published: true
 ---
-
 <div class="blog-index">  
   {% assign post = site.posts.first %}
   {% assign content = post.content %}
 {% if post.title %}
+  <a href="{{ root_url }}">Home</a>
+  <br>
+  {% if post.previous %}
+  <a href="{{ post.previous.url }}">Newer post</a>
+<br>
+  {% endif %}
+  
+  {% if post.next %}
+  <a href="{{ post.next.url }}">Older post</a>
+<br>
+  {% endif %}
+    
   <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
   </h1>      
