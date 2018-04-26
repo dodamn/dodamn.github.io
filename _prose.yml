@@ -1,7 +1,8 @@
 prose:
-  _posts:
-    - name: "published"
-      field:
-        element: "checkbox"
-        label: "published"
-        value: "true"
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "published"
+          value: "true"
