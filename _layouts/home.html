@@ -9,11 +9,16 @@ published: true
 {% if post.title %}
   <a href="{{ root_url }}">Home</a>
   <br>
+  {% if post.previous %}
   <a href="{{ post.previous.url }}">Newer post</a>
 <br>
+  {% endif %}
+  
+  {% if post.next %}
   <a href="{{ post.next.url }}">Older post</a>
-  <br>
-  <a href=
+<br>
+  {% endif %}
+    
   <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
   </h1>      
