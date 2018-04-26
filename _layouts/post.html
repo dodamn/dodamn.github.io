@@ -19,7 +19,7 @@ published: true
   <br>
   
   <br>
-  {{ page.date }}    
+  {{ page.date | date: "%Y-%m-%d" }}    
   <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
   </h1>      
