@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 <div class="home">
@@ -21,10 +22,10 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+        {%- break -%}
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
 </div>
