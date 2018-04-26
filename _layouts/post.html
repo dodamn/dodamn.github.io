@@ -22,7 +22,8 @@ published: true
   {{ page.date | date: "%Y-%m-%d" }}    
   <h1 class="entry-title">
     {{ post.title }}
-  </h1>      
+  </h1>
+  <h1>{{ page.path }}</h1>
 {% endif %}
 <div class="entry-content">{{ content }}</div>
 </div>
