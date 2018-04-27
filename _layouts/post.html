@@ -2,31 +2,4 @@
 layout: default
 published: true
 ---
-<div class="blog-index">  
-  {% assign post = page %}
-  {% assign content = post.content %}
-{% if post.title %}
-  <a href="{{ site.url }}">Home</a>
-  <br>
-  {% if post.next %}
-  <a href="{{ post.next.url }}">Newer post</a>
-  {% endif %}
-  <br>
-  
-  {% if post.previous %}
-  <a href="{{ post.previous.url }}">Older post</a>
-  {% endif %}
-  <br>
-  
-  <br>
-  <a href="{{site.github.repository_url}}/blob/master/{{page.path}}">View source</a>
-  <br>
-  <a href="http://prose.io/#{{site.repo}}/edit/{{site.branch}}/{{ page.path }}">Edit this post</a>
-  <br>
-  {{ page.date | date: "%Y-%m-%d" }}    
-  <h1 class="entry-title">
-    {{ post.title }}
-  </h1>
-{% endif %}
-<div class="entry-content">{{ content }}</div>
-</div>
+{% include post_detail.html %}
