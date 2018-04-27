@@ -1,22 +1,28 @@
-<div class="blog-index">  
-  {% assign post = site.posts.first %}
-  {% assign content = post.content %}
-{% if post.title %}
+<div class="blog-index">
   <a href="{{ site.url }}">Home</a>
-  <br>
-  {% if post.next %}
-  <a href="{{ post.next.url }}">Newer post</a>
+
+  &nbsp;
+  {% if include.post.next %}
+  <a href="{{ include.post.next.url }}">Newer post</a>
+  {% else %}
+  <del>Newer post</del>
   {% endif %}
-  <br>
-  
-  {% if post.previous %}
-  <a href="{{ post.previous.url }}">Older post</a>
+
+  &nbsp;
+  {% if include.post.previous %}
+  <a href="{{ include.post.previous.url }}">Older post</a>
+  {% else %}
+  <del>Older post</del>
   {% endif %}
-  <br>
-    
+
+  &nbsp;
+  <a href="{{site.github.repository_url}}/blob/master/{{include.post.path}}">Github link</a>
+  &nbsp;
+  <a href="http://prose.io/#{{site.repo}}/edit/{{site.branch}}/{{ include.post.path }}">Edit this post</a>
+
+
   <h1 class="entry-title">
-    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-  </h1>      
-{% endif %}
-<div class="entry-content">{{ content }}</div>
+    <a href="{{ root_url }}{{ include.post.url }}">{{ include.post.title }}</a>
+  </h1>
+<div class="entry-content">{{ include.post.content }}</div>
 </div>
