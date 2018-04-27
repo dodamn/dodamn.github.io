@@ -8,15 +8,7 @@
   </head>
   <body>
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-       <a href="{{ site.url }}">Home</a>
-       {% if page.next %}
-         <a href="{{ post.next.url }}">, Newer post</a>       
-       {% endif %}
-       {% if page.previous %}
-         <a href="{{ post.previous.url }}">, Older post</a>       
-       {% endif %} 
-       <br>        
+      <div class="wrapper">     
         {{ content }}
       </div>
     </main>
